@@ -7,7 +7,7 @@
         <title>reveal.js</title>
 
         <link rel="stylesheet" href="css/reveal.css">
-        <link rel="stylesheet" href="css/theme/black.css">
+        <link rel="stylesheet" href="css/theme/league.css">
 
         <!-- Theme used for syntax highlighting of code -->
         <link rel="stylesheet" href="lib/css/zenburn.css">
@@ -46,6 +46,9 @@
                     mathjax: 'js/MathJax/MathJax.js',
                     config: 'TeX-AMS_HTML-full'  // See http://docs.mathjax.org/en/latest/config-files.html
                 },
+                transition: 'cube',              // キューブ状の transition でスライドを動作させる
+                                                     // 設定値 default/cube/page/concave/zoom/linear/fade/none
+                slideNumber: true,               // 右下にスライドのページ番号を表示
                 dependencies: [
                     { src: 'plugin/markdown/marked.js' },
                     { src: 'plugin/markdown/markdown.js' },
